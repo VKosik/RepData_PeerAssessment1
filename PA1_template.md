@@ -13,7 +13,7 @@ echo = TRUE
 Now it is necessary to load and slighly adjuts the data for further analysis, I have decided to remove NA's right away
 
 ```r
-setwd("D:/DataScience/ReproducibleResearch/Project1")
+setwd("D:/DataScience/ReproducibleResearch/Project1/RepData_PeerAssessment1")
 # i have downloaded it manually via link provided on coursera site
 unzip("activity.zip")
 activity  <- read.csv("activity.csv", colClasses = c("integer", "Date", "factor"))
@@ -168,4 +168,8 @@ ggplot(DailyPatternNAFIX, aes(interval, stepsMEAN)) + geom_line(color = "darkblu
 ```
 
 ![plot of chunk unnamed-chunk-13](figure/unnamed-chunk-13-1.png) 
+
+```r
+# to create html and md files use knit2html("PA1_template.Rmd"), make sure you have the rmd file in your working directory getwd(), setwd()
+```
 

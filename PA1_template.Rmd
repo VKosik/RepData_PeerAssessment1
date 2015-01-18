@@ -11,7 +11,7 @@ echo = TRUE
 
 Now it is necessary to load and slighly adjuts the data for further analysis, I have decided to remove NA's right away
 ```{r}
-setwd("D:/DataScience/ReproducibleResearch/Project1")
+setwd("D:/DataScience/ReproducibleResearch/Project1/RepData_PeerAssessment1")
 # i have downloaded it manually via link provided on coursera site
 unzip("activity.zip")
 activity  <- read.csv("activity.csv", colClasses = c("integer", "Date", "factor"))
